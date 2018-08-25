@@ -1,0 +1,10 @@
+.bg-company-red {
+    background-color: rgb(20, 40, 86);
+  }
+  body { font-family: "Comic Sans MS"; }
+  .titulo{
+    color: white;
+  }
+  .fa{
+    color: white;
+  }
