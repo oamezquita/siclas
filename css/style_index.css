@@ -34,3 +34,16 @@ div.mdlavatar img {
   width: 100%;
   border-radius: 50%; 
 }
+
+.descripcion{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.imagen_tb {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  width: 50%;
+}
