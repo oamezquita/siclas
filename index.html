@@ -59,39 +59,55 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
-         </div>
-         <br>
-         <div class="row descripcion">
+        </div>
+        <br>
+        <div class="row descripcion">
             <div class="col-sm-4">
-               <div class="card text-center">
-                  <img class="img-responsive imagen_tb" src="images/maps_1.png" alt="Map" style="width: 50%; height: auto;">
-                  <div class="card-body">
-                     <h5 class="card-title">PLANEA TU VIAJE</h5>
-                     <p class="card-text">Planea tu recorrido usando rutas rápidas y seguras, conoce las diferentes zonas de riesgo en tu localidad, informa de cualquier evento o falla en la infraestructura pública que pueda afectar tu seguridad y la de los demás.</p>
-                  </div>
-               </div>
+                <div class="card text-center">
+                    <div class="item itemJQuery">
+                        
+                            <div style="margin-top: 0px;" class="item-billboard">
+                                <img class="img-responsive imagen_tb" src="images/maps_1.png" alt="Info" style="width: 72%; height: auto;">
+                            </div>
+                            <div class="item-detail">
+                                <h5 class="card-title">PLANEA TU VIAJE</h5>
+                                <p class="card-text">Planea tu recorrido usando rutas rápidas y seguras, conoce las diferentes zonas de riesgo en tu localidad, informa de cualquier evento o falla en la infraestructura pública que pueda afectar tu seguridad y la de los demás.</p>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-               <div class="card text-center">
-                  <img class="img-responsive imagen_tb" src="images/police_1.png" alt="Police" style="width: 50%; height: auto;">
-                  <div class="card-body">
-                     <h5 class="card-title">SEGURIDAD</h5>
-                     <p class="card-text">En la actualidad la seguridad es un tema importante en nuestro diario vivir, por lo tanto se hace uso de tecnologías para aportar en la solución a la problemática de inseguridad que enfrentan algunos de los ciudadanos que usan la bicicleta como medio de transporte.</p>
-                  </div>
-               </div>
+                <div class="card text-center">
+                    <div class="item itemJQuery">
+                        
+                            <div style="margin-top: 0px;" class="item-billboard">
+                                <img class="img-responsive imagen_tb" src="images/police_1.png" alt="Info" style="width: 72%; height: auto;">
+                            </div>
+                            <div class="item-detail">
+                                <h5 class="card-title">SEGURIDAD</h5>
+                                <p class="card-text">En la actualidad la seguridad es un tema importante en nuestro diario vivir, por lo tanto se hace uso de tecnologías para aportar en la solución a la problemática de inseguridad que enfrentan algunos de los ciudadanos que usan la bicicleta como medio de transporte.</p>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
             <div class="col-sm-4">
-               <div class="card text-center">
-                  <img class="img-responsive imagen_tb" src="images/warning_1.png" alt="Info" style="width: 50%; height: auto;">
-                  <div class="card-body">
-                     <h5 class="card-title">INFORMACIÓN Y ALERTAS</h5>
-                     <p class="card-text">Recibe información en tiempo real acerca de eventos que sucedan dentro de tu localidad, además de enviar y responder a solicitudes expresadas por otros usuarios.</p>
-
-                  </div>
-               </div>
+                <div class="card text-center">
+                    <div class="item itemJQuery">
+                        
+                            <div style="margin-top: 0px;" class="item-billboard">
+                                <img class="img-responsive imagen_tb" src="images/warning_1.png" alt="Info" style="width: 72%; height: auto;">
+                            </div>
+                            <div class="item-detail">
+                                <h5 class="card-title">INFORMACIÓN Y ALERTAS</h5>
+                                <p class="card-text">Recibe información en tiempo real acerca de eventos que sucedan dentro de tu localidad, además de enviar y responder a solicitudes expresadas por otros usuarios.</p>
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
       <nav class="navbar navbar-dark bg-company-red">
          <ul class="navbar-nav ml-auto">
             <div class="d-flex flex-row">
@@ -202,15 +218,37 @@
          </div>
       </div>
       <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="js/jquery/jquery-3.3.1.min.js"></script>
-      <script src="js/popper/popper.min.js"></script>
-      <script src="js/bootstrap/bootstrap.js"></script>
-      <script>
-         $('.carousel').carousel({
-         interval: 4000
-         });
-      </script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery/jquery-3.3.1.min.js"></script>
+        <script src="js/popper/popper.min.js"></script>
+        <script src="js/bootstrap/bootstrap.js"></script>
+        <script>
+            $('.carousel').carousel({
+            interval: 4000
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+            jQuery(".itemJQuery").bind({
+                mouseenter: function() {
+                    var self = jQuery(this), billboard = self.data("billboardElement");
+                    if(!billboard) {
+                        billboard = jQuery(jQuery(".item-billboard", this)[0]);
+                        self.data("billboardElement", billboard);
+                    }
+                    jQuery(billboard).stop().animate({
+                        "margin-top": "-240px"
+                    });
+                },
+                mouseleave: function() {
+                    jQuery(this).data("billboardElement").stop().animate({
+                        "margin-top": 0
+                    });
+                }
+            });
+            });	
+        </script>
    </body>
 </html>
 
