@@ -34,7 +34,7 @@
       </nav>
       <br>
       <div class="container">
-         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -42,14 +42,20 @@
             </ol>
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="d-block w-100" src="images/logo.jpg" alt="First slide">
+                  <img class="d-block w-100" src="images/bike_1.jpeg" alt="First slide">
                </div>
                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/logo.jpg" alt="Second slide">
+                  <img class="d-block w-100" src="images/bike_6.jpeg" alt="Second slide">
                </div>
                <div class="carousel-item">
-                  <img class="d-block w-100" src="images/logo.jpg" alt="Third slide">
+                  <img class="d-block w-100" src="images/bike_3.jpeg" alt="Third slide">
                </div>
+               <div class="carousel-item">
+                    <img class="d-block w-100" src="images/bike_4.jpeg" alt="Third slide">
+                 </div>
+                 <div class="carousel-item">
+                        <img class="d-block w-100" src="images/bike_5.jpeg" alt="Third slide">
+                     </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -59,7 +65,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
             </a>
-        </div>
+         </div>
         <br>
         <div class="row descripcion">
             <div class="col-sm-4">
@@ -108,6 +114,8 @@
                 </div>
             </div>
         </div>
+      </div>
+      <br>
       <nav class="navbar navbar-dark bg-company-red">
          <ul class="navbar-nav ml-auto">
             <div class="d-flex flex-row">
@@ -222,33 +230,7 @@
         <script src="js/jquery/jquery-3.3.1.min.js"></script>
         <script src="js/popper/popper.min.js"></script>
         <script src="js/bootstrap/bootstrap.js"></script>
-        <script>
-            $('.carousel').carousel({
-            interval: 4000
-            });
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script>
-            jQuery(document).ready(function() {
-            jQuery(".itemJQuery").bind({
-                mouseenter: function() {
-                    var self = jQuery(this), billboard = self.data("billboardElement");
-                    if(!billboard) {
-                        billboard = jQuery(jQuery(".item-billboard", this)[0]);
-                        self.data("billboardElement", billboard);
-                    }
-                    jQuery(billboard).stop().animate({
-                        "margin-top": "-240px"
-                    });
-                },
-                mouseleave: function() {
-                    jQuery(this).data("billboardElement").stop().animate({
-                        "margin-top": 0
-                    });
-                }
-            });
-            });	
-        </script>
+        <script src="js/index.js"></script>
    </body>
 </html>
 
