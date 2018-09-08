@@ -1,0 +1,10 @@
+.mapContainer{  
+    height: 79vh;
+}
+.red .active a,
+.red .active a:hover {
+    background-color: red;
+}
+.nav-link > .active > a, .nav-link > .active > a:hover {
+    background-color: red;
+}
