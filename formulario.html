@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/Logo_icono_2.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_formulario.css">
+    <title>SICLAS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-company-red">
+        <a class="navbar-brand" href="#"><img src="images/Logo_0.5x.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <h1 class="titulo">SICLAS</h1>
+                    <h5 class="titulo">Servicio de Informacion y consulta local a ciclistas</h5>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item justify-self-start align-self-center">
+                    <div class="text-white navuser">
+                        Nombre de Usuario
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                            <img src="images/user.png">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div>
+        <form>
+            <div class="containerSelf color_container1">
+                <fieldset class="border p-3">
+                    <legend class="marco_legend_perfil">Datos del perfil</legend>
+                    <div class="form-group row intext">
+                        <label for="label_Name" class="col-sm-2 col-form-label">Nombres:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="input_Name">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_LastName" class="col-sm-2 col-form-label">Apellidos:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="input_LastName">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_Email" class="col-sm-2 col-form-label">Correo electrónico:</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="input_Email">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_Phone" class="col-sm-2 col-form-label">Celular:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="input_Phone">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_Localidad" class="col-sm-2 col-form-label">Localidad:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="sel1" name="sellist1">
+                                <option>Antonio Nariño</option>
+                                <option>Barrios Unidos</option>
+                                <option>Bosa</option>
+                                <option>Chapinero</option>
+                                <option>Ciudad Bolívar</option>
+                                <option>Engativá</option>
+                                <option>Fontibón</option>
+                                <option>Kennedy</option>
+                                <option>La Calendaria</option>
+                                <option>Los Mártires</option>
+                                <option>Puente Aranda</option>
+                                <option>Rafael Uribe Uribe</option>
+                                <option>San Cristóbal</option>
+                                <option>Santa Fe</option>
+                                <option>Suba</option>
+                                <option>Sumapaz</option>
+                                <option>Teusaquillo</option>
+                                <option>Tunjuelito</option>
+                                <option>Usaquén</option>
+                                <option>Usme</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <div class="containerSelf color_container2">
+                <fieldset class="border p-3">
+                    <legend class="marco_legend_cicla">Datos de bicicleta</legend>
+                    <div class="form-group row intext">
+                        <label for="label_Name" class="col-sm-2 col-form-label">Referencia:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="input_Name">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_LastName" class="col-sm-2 col-form-label">Marca:</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="input_LastName">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_Email" class="col-sm-2 col-form-label">Color:</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="input_Email">
+                        </div>
+                    </div>
+                    <div class="form-group row intext">
+                        <label for="label_LastName" class="col-sm-2 col-form-label">Seleccionar foto:</label>
+                        <div class="col-sm-4">
+                            <input type="file" class="form-control-file" name="file">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+        <div class="containerSelf CentrarBtn">
+            <button type="button" class="btn btn-success btn-lg">Guardar</button>
+        </div>
+    </div>
+
+    <br>
+    <nav class="navbar navbar-dark bg-company-red">
+        <ul class="navbar-nav ml-auto">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <h4><i class="fa fa-facebook-official"></i></h4>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="https://twitter.com/?lang=es" target="_blank">
+                        <h4><i class="fa fa-twitter"></i></h4>
+                    </a>
+                </div>
+                <div class="p-2">
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                        <h4><i class="fa fa-instagram"></i></h4>
+                    </a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
