@@ -1,0 +1,48 @@
+.navuser {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropdown-toggle:after {
+    content: none
+}
+
+.containerSelf {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.color_container1 {
+    background-color: rgb(9, 48, 138);
+}
+
+.color_container2 {
+    background-color: rgb(20, 77, 211);
+}
+
+.marco_legend_perfil {
+    width: 180px;
+    color: white;
+}
+
+.marco_legend_cicla {
+    width: 205px;
+    color: white;
+}
+
+.intext {
+    margin-left: 1%;
+}
+
+label {
+    color: white;
+}
+
+.CentrarBtn {
+    display: flex;
+    justify-content: center;
+}
