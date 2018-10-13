@@ -1,193 +1,85 @@
- <div class="container">
-        <%= current_user.first_name %>
-   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-       <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-       </ol>
-       <div class="carousel-inner">
-          <div class="carousel-item active">
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
                 <%= image_tag("bike_1.jpeg", :alt => "First Slide", :class => "img-responsive") %>
-          </div>
-          <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
                 <%= image_tag("bike_6.jpeg", :alt => "Second Slide", :class => "img-responsive") %>
-          </div>
-          <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
                 <%= image_tag("bike_3.jpeg", :alt => "Third Slide", :class => "img-responsive") %>
-          </div>
-          <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
                 <%= image_tag("bike_4.jpeg", :alt => "Fourth Slide", :class => "img-responsive") %>
             </div>
             <div class="carousel-item">
                     <%= image_tag("bike_5.jpeg", :alt => "Fifth Slide", :class => "img-responsive") %>
                 </div>
-       </div>
-       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="sr-only">Previous</span>
-       </a>
-       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-       <span class="sr-only">Next</span>
-       </a>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
     </div>
-   <br>
-   <div class="row descripcion">
-       <div class="col-sm-4">
-           <div class="card text-center">
-               <div class="item itemJQuery">
-                   
-                       <div style="margin-top: 0px;" class="item-billboard">
+    <br>
+    <div class="row descripcion">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="item itemJQuery">
+                    
+                        <div style="margin-top: 0px;" class="item-billboard">
                             <%= image_tag("maps_1.png", :alt => "Info",:class => "img-responsive imagen_tb") %>
-                       </div>
-                       <div class="item-detail">
-                           <h5 class="card-title">PLANEA TU VIAJE</h5>
-                           <p class="card-text">Planea tu recorrido usando rutas rápidas y seguras, conoce las diferentes zonas de riesgo en tu localidad, informa de cualquier evento o falla en la infraestructura pública que pueda afectar tu seguridad y la de los demás.</p>
-                       </div>
-                   
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-4">
-           <div class="card text-center">
-               <div class="item itemJQuery">
-                   
-                       <div style="margin-top: 0px;" class="item-billboard">
+                        </div>
+                        <div class="item-detail">
+                            <h5 class="card-title">PLANEA TU VIAJE</h5>
+                            <p class="card-text">Planea tu recorrido usando rutas rápidas y seguras, conoce las diferentes zonas de riesgo en tu localidad, informa de cualquier evento o falla en la infraestructura pública que pueda afectar tu seguridad y la de los demás.</p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="item itemJQuery">
+                    
+                        <div style="margin-top: 0px;" class="item-billboard">
                             <%= image_tag("police_1.png", :alt => "Info",:class => "img-responsive imagen_tb") %>   
-                       </div>
-                       <div class="item-detail">
-                           <h5 class="card-title">SEGURIDAD</h5>
-                           <p class="card-text">En la actualidad la seguridad es un tema importante en nuestro diario vivir, por lo tanto se hace uso de tecnologías para aportar en la solución a la problemática de inseguridad que enfrentan algunos de los ciudadanos que usan la bicicleta como medio de transporte.</p>
-                       </div>
-                   
-               </div>
-           </div>
-       </div>
-       <div class="col-sm-4">
-           <div class="card text-center">
-               <div class="item itemJQuery">
-                   
-                       <div style="margin-top: 0px;" class="item-billboard">
-                           <%= image_tag("warning_1.png", :alt => "Info",:class => "img-responsive imagen_tb") %>   
-                       </div>
-                       <div class="item-detail">
-                           <h5 class="card-title">INFORMACIÓN Y ALERTAS</h5>
-                           <p class="card-text">Recibe información en tiempo real acerca de eventos que sucedan dentro de tu localidad, además de enviar y responder a solicitudes expresadas por otros usuarios.</p>
-                       </div>
-                   
-               </div>
-           </div>
-       </div>
-   </div>
- </div>
- <br>
- <nav class="navbar navbar-dark bg-company-red">
-    <ul class="navbar-nav ml-auto">
-       <div class="d-flex flex-row">
-          <div class="p-2">
-             <a href="https://es-la.facebook.com/" target="_blank">
-                <h4><i class="fa fa-facebook-official"></i></h4>
-             </a>
-          </div>
-          <div class="p-2">
-             <a href="https://twitter.com/?lang=es" target="_blank">
-                <h4><i class="fa fa-twitter"></i></h4>
-             </a>
-          </div>
-          <div class="p-2">
-             <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                <h4><i class="fa fa-instagram"></i></h4>
-             </a>
-          </div>
-       </div>
-    </ul>
- </nav>
- <!-- The Modal registrar-->
- <div class="modal fade" id="registrar">
-    <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-          <!-- Modal body -->
-          <div class="modal-body">
-             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-             <div class="mdlcabeza">
-                <h2 class="text-center">Registrate...</h2>
-             </div>
-             <div class="mdlentrada">
-                <div class="form-group container">
-                   <label class="user"> Nombres:  </label>
-                   <input type="text" class="form-control" name="first_name" placeholder="" required="required">		
+                        </div>
+                        <div class="item-detail">
+                            <h5 class="card-title">SEGURIDAD</h5>
+                            <p class="card-text">En la actualidad la seguridad es un tema importante en nuestro diario vivir, por lo tanto se hace uso de tecnologías para aportar en la solución a la problemática de inseguridad que enfrentan algunos de los ciudadanos que usan la bicicleta como medio de transporte.</p>
+                        </div>
+                    
                 </div>
-                <div class="form-group container">
-                   <label class="user"> Apellidos:  </label>
-                   <input type="text" class="form-control" name="last_name" placeholder="" required="required">		
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="item itemJQuery">
+                    
+                        <div style="margin-top: 0px;" class="item-billboard">
+                            <%= image_tag("warning_1.png", :alt => "Info",:class => "img-responsive imagen_tb") %>   
+                        </div>
+                        <div class="item-detail">
+                            <h5 class="card-title">INFORMACIÓN Y ALERTAS</h5>
+                            <p class="card-text">Recibe información en tiempo real acerca de eventos que sucedan dentro de tu localidad, además de enviar y responder a solicitudes expresadas por otros usuarios.</p>
+                        </div>
+                    
                 </div>
-                <div class="form-group container">
-                   <label class="user"> Correo electrónico:  </label>
-                   <input type="text" class="form-control" name="email" placeholder="" required="required">		
-                </div>
-                <div class="form-group container">
-                   <label class="user"> Contraseña:  </label>
-                   <input type="password" class="form-control" name="password" placeholder="" required="required">	
-                </div>
-                <div class="form-group container">
-                   <label class="user"> Confirmar constraseña:  </label>
-                   <input type="password" class="form-control" name="verify_password" placeholder="" required="required">	
-                </div>
-             </div>
-             <!--                     
-                <div class="redes">
-                    <div class="social-btn text-center container">
-                        <a href="#" class="btn btn-primary btn-block btn-lg"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
-                        <a href="#" class="btn btn-danger btn-block btn-lg"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
-                    </div>        
-                </div>
-                -->
-             <div class="mdlbotones">
-                <div class="form-group">
-                   <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Registrarse</button>
-                </div>
-             </div>
-          </div>
-       </div>
+            </div>
+        </div>
     </div>
- </div>
- <!-- The Modal inicio sesion-->
- <div class="modal fade" id="iniciosesion">
-    <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-          <!-- Modal body -->
-          <div class="modal-body">
-             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-             <div class="mdlavatar">
-                <img class="img-responsive profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
-                   alt="">
-             </div>
-             <div class="mdlentrada">
-                <div class="form-group container">
-                   <label class="user"> Correo electrónico:  </label>
-                   <input type="text" class="form-control" name="email" placeholder="" required="required">		
-                </div>
-                <div class="form-group container">
-                   <label class="user"> Contraseña:  </label>
-                   <input type="password" class="form-control" name="password" placeholder="" required="required">	
-                </div>
-             </div>
-             <!--                     
-                <div class="redes">
-                    <div class="social-btn text-center container">
-                        <a href="#" class="btn btn-primary btn-block btn-lg"><i class="fa fa-facebook"></i> Sign in with <b>Facebook</b></a>
-                        <a href="#" class="btn btn-danger btn-block btn-lg"><i class="fa fa-google"></i> Sign in with <b>Google</b></a>
-                    </div>        
-                </div>
-                -->
-             <div class="mdlbotones">
-                <div class="form-group">
-                   <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Iniciar sesión</button>
-                </div>
-                <p class="text-center small"><a href="#">Forgot Password?</a></p>
-             </div>
-          </div>
-       </div>
-    </div>
- </div>
+    <br>
+
+    
+    
