@@ -11,26 +11,105 @@
     <link rel="shortcut icon" href="../../assets/images/Logo_icono_2.ico" />
   </head>
   <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-company-red">
-    <a class="navbar-brand" href="#"><%= image_tag("Logo_0.5x.png", :alt => "rss feed") %></a>   
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="collapsingNavbar">
-       <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-             <h1 class="titulo">SICLAS</h1>
-             <h5 class="titulo">Servicio de Informacion y consulta local a ciclistas</h5>
-          </li>
-       </ul>
-       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-             <button type="button" class="btn btn-light"data-toggle="modal" data-target="#iniciosesion">Iniciar Sesion</button>  
-             <button type="button" class="btn btn-light" data-toggle="modal" data-target="#registrar">Registrarse</button>
-          </li>
-       </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-company-red">
+      <a class="navbar-brand" href=""><%= link_to image_tag("Logo_0.5x.png", :alt => "rss feed"), welcome_index_url%></a>   
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <h1 class="titulo">SICLAS</h1>
+              <h5 class="titulo">Servicio de Informacion y consulta local a ciclistas</h5>
+            </li>
+        </ul>
+<!--
+        <ul class="navbar-nav ml-auto">
+          <% if signed_in? %>
+            <li class="nav-item m-1">
+              <div class="text-white">
+                <h3><%= current_user.first_name%></h3>
+              </div>
+            </li>
+            <li class="nav-item m-1">
+              <%= link_to "Salir", destroy_user_session_path, method: :delete, :class => "btn btn-light" %>
+            </li>
+          <% else %>
+            <li class="nav-item m-1">
+              <%= link_to "Registrar", new_user_registration_path, :class => "btn btn-light" %>
+            </li>
+
+            <li class="nav-item m-1">
+              <%= link_to "Ingresar", new_user_session_path, :class => "btn btn-light" %>
+            </li>
+          <% end %>
+        </ul>
+-->
+        <ul class="navbar-nav ml-auto">
+          <% if signed_in? %>
+            <li class="nav-item m-1 flex-user">
+              <div class="text-white">
+                <h3><%= current_user.first_name%></h3>
+              </div>
+            </li>
+            <li class="nav-item m-1">
+              <div class="dropdown">
+
+                  <%= link_to "#", class: 'dropdown-toggle', data: {toggle: 'dropdown'}, 'aria-haspopup'=>'false' do %>
+                    <%= image_tag("user.png", :alt => "user img")%>
+                  <% end %>
+                  <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Perfil</a>
+                      <a class="dropdown-item" href="#">Configuración</a>
+                      <div class="dropdown-divider"></div>
+                      <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, :class => "dropdown-item" %>
+                  </div>
+
+              </div>
+              
+            </li>
+          <% else %>
+            <li class="nav-item m-1">
+              <%= link_to "Registrar", new_user_registration_path, :class => "btn btn-light" %>
+            </li>
+
+            <li class="nav-item m-1">
+              <%= link_to "Ingresar", new_user_session_path, :class => "btn btn-light" %>
+            </li>
+          <% end %>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="container p-1">
+      <%= yield %>
     </div>
- </nav>
-    <%= yield %>
+
+    <footer class="page-footer bg-company-red">
+      <div class="container-fluid">
+        <div class="row">
+          <ul class="navbar-nav ml-auto">
+              <div class="d-flex flex-row">
+                  <div class="p-2">
+                      <a href="https://es-la.facebook.com/" target="_blank">
+                      <h4><i class="fa fa-facebook-official"></i></h4>
+                      </a>
+                  </div>
+                  <div class="p-2">
+                      <a href="https://twitter.com/?lang=es" target="_blank">
+                      <h4><i class="fa fa-twitter"></i></h4>
+                      </a>
+                  </div>
+                  <div class="p-2">
+                      <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                      <h4><i class="fa fa-instagram"></i></h4>
+                      </a>
+                  </div>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
