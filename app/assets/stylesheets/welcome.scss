@@ -89,3 +89,28 @@
     background: #ececec;
     font-family:verdana;
   }
+
+  .flex-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div_fieldset{
+    //background-color: rgb(9, 48, 138);
+    background-color: rgb(20, 77, 211);
+    color: white;
+  }
+
+  .legend_title{
+    display: block;
+    width: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    text-align: end;
+  }
+
+  .footer-last{
+    bottom: 0%;
+  }
